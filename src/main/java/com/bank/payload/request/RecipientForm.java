@@ -4,7 +4,6 @@ import lombok.Data;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Data
@@ -15,8 +14,8 @@ public class RecipientForm {
 
     @Email
     private String email;
-    @NotNull
-    private Integer phone;
+    @NotBlank
+    private String phone;
     @NotBlank
     @Size(min=3, max=50)
     private String bankName;
