@@ -1,3 +1,4 @@
+
 package com.bank.service;
 
 import com.bank.model.Account;
@@ -7,11 +8,10 @@ import com.bank.payload.request.TransactionRequest;
 import com.bank.payload.request.TransferRequest;
 
 public interface AccountService {
-
     Account createAccount();
-
-    void deposite(TransactionRequest request, User user);
+    void deposit(TransactionRequest request, User user);
     void withdraw(TransactionRequest request, User user);
     void saveRecipient(Recipient recipient);
     void transfer(TransferRequest request, User user);
+
 }
